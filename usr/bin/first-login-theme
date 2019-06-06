@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -e "/etc/default-theme-biglinux" ]; then
+    exit 0
+fi
+
+if [ -e "$HOME/.biglinux_theme_applied" ]; then
+    exit 0
+fi
+
+> "$HOME/.biglinux_theme_applied"
+
+biglinux-themes.sh --apply $(cat /etc/default-theme-biglinux)

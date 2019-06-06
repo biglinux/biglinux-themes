@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;
+Comment[pt_BR]=
+Comment=
+Exec=krunner
+GenericName[pt_BR]=
+GenericName=
+Icon=search
+MimeType=
+Name[pt_BR]=Executar (Krunner)
+Name=Executar (Krunner)
+OnlyShowIn=KDE;
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,229 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-livecd
+
+# Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
+# That's include jquery and materialize / Isso inclui o jquery e o materialize
+# http://materializecss.com/
+. /usr/share/bigbashview/bcc/shell/base.sh
+
+theme_actual="$(cat "$HOME/.big_desktop_theme")"
+
+if [ "$theme_actual" = "" ]; then
+    biglinux-themes.sh --apply arc
+    checked_arc="checked"
+fi
+
+if [ "$theme_actual" = "arc" ]; then
+    checked_arc="checked"
+fi
+
+if [ "$theme_actual" = "adapta" ]; then
+    checked_adapta="checked"
+fi
+
+if [ "$theme_actual" = "dark" ]; then
+    checked_dark="checked"
+fi
+
+
+
+  echo '
+  <body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/usr/share/bigbashview/bcc/materialize/css/materialize.css">
+    <script src="/usr/share/bigbashview/bcc/materialize/js/jquery.js"></script>
+    <script src="/usr/share/bigbashview/bcc/materialize/js/materialize.js"></script>
+    <script src="/usr/share/bigbashview/bcc/js/big.js"></script>
+  </head>'
+
+
+
+
+setxkbmap $(grep XKBLAYOUT /etc/default/keyboard | sed 's|.*="||g;s|"||g')
+
+echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />'
+
+cat << EOF
+<style>
+
+body {
+			background-image: url(/usr/share/wallpapers/BigBrasil.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #000;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+padding: 0px;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+font-weight: 250;
+color: rgba(255, 255, 255, 1);
+font-family: 'Droid Sans';
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.bar:before {
+  background: url(/usr/share/wallpapers/BigLinux/BigBrasil.jpg);
+	background-attachment: fixed;
+}
+
+
+
+#page2 {
+	margin-right: 18%;
+	margin-left: 18%;
+	height: 100%;
+}
+
+
+#middle {
+	display: table-cell;
+vertical-align: middle;
+width: 100%;
+padding-left: 8%;
+padding-right: 8%;
+padding-bottom: 15px;
+padding-top: 15%;
+font-size: 20px;
+display: block;
+box-sizing: border-box;
+text-align: center;
+border: 1px solid #ccc;
+border-top: 0px;
+border-bottom: 0px;
+argin-bottom:0px;
+height: 100%;
+	top: 0%;
+}
+
+
+.bar {
+  position: relative;
+  background: rgba(0,0,0,0.65);
+  box-shadow: 0px 0px 95px 0px rgba(0,0,0,1);
+	height: 100%;
+}
+
+.bar:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0; right: 0; left: 0;
+  filter: blur(15px);
+  -webkit-filter: blur(15px);
+	height: 100%;
+}
+
+.material-tooltip {font-family:ubuntu;
+font-weight:400;font-size:18px;
+line-height: 120%;}
+
+.with-gap {color: #ffffff !important;
+font-size:20px !important;
+margin-left:20px;
+margin-right:20px;
+margin-top:10%;
+}
+
+h1 {text-align:center;font-family:ubuntu;font-weight:400;font-size:20px;color:#fff;text-shadow:0em 0.05em 0 rgba(0,0,0,0.35)}
+button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
+font-family:ubuntu;font-weight:bold;font-size:18px}
+button:before, button:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
+button:before {top:-6px;left:-6px;border-width:2px 0 0 2px;z-index:5;}
+button:after {bottom:-6px;right:-6px;border-width:0 2px 2px 0;}
+button:hover:before, button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#fff}
+button:hover {color:#353535;background-color:#fff;border-color:#fff}
+.panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+
+
+.pink button {color:#eb1777;border-color:#eb1777}
+.pink button:before, .pink button:after  {border-color:#eb1777}
+.pink button:hover:before, .pink button:hover:after {border-color:#eb1777;}
+.pink button:hover {color:#fff;background-color:#eb1777;border-color:#eb1777;}
+.pink .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+
+
+.blue button {color:#3bb4e5;border-color:#3bb4e5}
+.blue button:before, .blue button:after  {border-color:#3bb4e5}
+.blue button:hover:before, .blue button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#3bb4e5;transform:rotateY(180deg)}
+.blue button:hover {color:#3bb4e5;background-color:transparent;border-color:#3bb4e5}
+.blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+
+.borderless button {border-color:rgba(0,0,0,0);color:#999}
+.borderless button:hover {border-color:#353535;background-color:transparent;color:#353535}
+.borderless button:before, .borderless button:after {border-color:transparent;}
+.borderless button:hover:before, .borderless button:hover:after {width:calc(100% + 12px); height:calc(100% + 12px);border-color:#353535}
+
+.bw button {color:#fff;border-color:#fff;text-shadow:0 1px 1px rgba(0,0,0,0.1);
+box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
+}
+.bw button:before, .bw button:after  {border-color:#fff}
+.bw button:hover:before, .bw button:hover:after {width:calc(100% + 12px);
+  height:calc(100% + 12px);border-color:#353535;}
+.bw button:hover {color:#fff;background-color:#353535;border-color:#353535}
+.blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
+
+
+</style>
+
+
+<script>
+$('.tooltipped').tooltip({
+ html: "<img src='/usr/share/wallpapers/BigLinux/BigBrasil.jpg'>"
+});
+</script>
+
+
+EOF
+
+echo '<div id=page2>'
+echo '<div id="middle" class="bar"><h1>'
+
+
+
+  echo $"Passe o mouse sobre as opções a baixo e faça sua escolha, as alterações serão aplicadas nos temas GTK, QT, KWIN, Openbox, ícones e fontes, para que o tema funcione adequadamente, após alternar, recomendo que feche a sessão e faça login novamente no sistema:" '<p>'
+
+
+
+
+
+cat << EOF
+<br><br><br>
+      <input onclick="location.href = 'arc-theme.run'" name="option" type="radio" id="arc" value="arc" $checked_arc />
+      <label for="arc" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=arc.png>">
+EOF
+      echo $"Tema Arc"
+cat << EOF
+</label>
+      <input onclick="location.href = 'adapta-theme.run'" name="option" type="radio" id="adapta" value="adapta" $checked_adapta />
+      <label for="adapta" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=adapta.png>">
+EOF
+echo $"Tema Adapta"
+cat << EOF
+</label>
+
+      <input onclick="location.href = 'dark-theme.run'" name="option" type="radio" id="dark" value="dark" $checked_dark />
+      <label for="dark" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=dark.png>">
+EOF
+echo $"Tema Dark" '</label>'
+
+
+
+
+    
+
+
+echo '</h1></div>'
+echo '</div></div>'
