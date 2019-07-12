@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+package_name=biglinux-themes
+case "$1" in
+  remove)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+    ;;
+  purge)
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+;;
+esac
+exit 0

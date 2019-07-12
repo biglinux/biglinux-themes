@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=biglinux-themes
+mkdir -p "/usr/share/dpkgdivert/biglinux-themes"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareplasmadesktopthemedefaulticonsstart.svgz" --rename "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/plasma/desktoptheme/default/icons/start.svgz")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareplasmadesktopthemedefaulticonsstart.svgz" --rename "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+fi
+;;
+esac
+exit 0
