@@ -2,7 +2,7 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 f84f8763f5008509c85d5194c7d0a750  DEBIAN/dpkg-divert
 1f81ce250690d76e2332b4133ed54cd7  DEBIAN/preinst
 dc807f68d601dad97eef51535f2f6dcd  DEBIAN/postrm
-79069cfac7db1e8b1688314440c6e4ab  DEBIAN/control
+70751f4b05bcac3bb7c01cbfd61fc04c  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 6147ab775869b3edafd2005a03974a5a  usr/share/plasma/desktoptheme/BigLinux-Arc-Dark/dialogs/background.svg
@@ -128,13 +128,13 @@ bdf5bed9748c9c3dff4c8959d5770b51  usr/share/biglinux/themes/dark/.config/gtkrc
 b0998ef31c002687ab52504e299284d1  usr/share/biglinux/themes/dark/.gtkrc-2.0
 00349e00b2e779947ab316353ef8aaf9  usr/share/applications/biglinux-themes-gui.desktop
 bbab11bc0852261aaf7eef54d5d0070a  usr/share/applications/Executar (Krunner).desktop
-b2c47a438348fcf492f8a94b051ef456  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
 0c1f3587437777fc1074de31727c2c5b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta.png
 c798a2943b573aad0faf8fdcc3535715  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc.png
 4b365c4d0a40c74ddd66734db881de2e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark.png
 3cbf7370e4d2ddc389aa57710165d076  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
 d23b8bc9384a592a30365fab0f2197b4  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
 0c2ffdca060decf03ed4c795e488fbf0  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
+82db3857de56d7f331a413a99f5a0042  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
 15d77e027dd0e9c1500c956a81921e31  usr/bin/biglinux-themes.sh
 86f1bc2228ef5c8e3e3e6d051092f738  usr/bin/first-login-theme
 87bb3a310e2fc55f28d89b920e9873bd  usr/bin/biglinux-themes-gui
