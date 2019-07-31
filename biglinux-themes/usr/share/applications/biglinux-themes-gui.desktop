@@ -2,8 +2,8 @@
 Categories=Settings;
 Exec=biglinux-themes-gui
 Icon=preferences-system-windows-effect-trackmouse
-Name[pt_BR]=Configurar o tema do sistema
-Name=Configurar o tema do sistema
+Name[pt_BR]=Aparência
+Name=Appearance
 StartupNotify=true
 Terminal=false
 Type=Application
