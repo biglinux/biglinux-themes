@@ -2,7 +2,7 @@
 Categories=Qt;KDE;Utility;
 Comment[pt_BR]=
 Comment=
-Exec=krunner
+Exec=krunner & krunner
 GenericName[pt_BR]=
 GenericName=
 Icon=search
