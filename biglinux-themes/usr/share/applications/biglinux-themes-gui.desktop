@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Settings;
 Exec=biglinux-themes-gui
-Icon=preferences-system-windows-effect-trackmouse
+Icon=big-plasma-theme
 Name[pt_BR]=Aparência
 Name=Appearance
 StartupNotify=true
