@@ -11,3 +11,4 @@ fi
 > "$HOME/.biglinux_theme_applied"
 
 biglinux-themes.sh --apply $(cat /etc/default-theme-biglinux)
+echo "$(cat /etc/default-theme-biglinux)" > "$HOME/.big_desktop_theme"
