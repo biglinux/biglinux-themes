@@ -13,7 +13,11 @@ case "$1" in
 	#Confere se o arquivo, diretório, link, ou arquivo especial NÃO existe
     if [ -e "$folder/$2" ]; then
         cp -Rf $folder/$2/. "$HOME"
-        else
+        echo "$2" > "$HOME/.big_desktop_theme"
+        if [ "$XDG_CURRENT_DESKTOP" = "LXQt" ]; then
+            openbox --restart
+        fi
+   else
         echo "Theme not found."
     fi
     exit
@@ -38,4 +42,3 @@ esac
 
 
 IFS=$OIFS
-
