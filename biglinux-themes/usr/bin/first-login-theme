@@ -4,11 +4,11 @@ if [ ! -e "/etc/default-theme-biglinux" ]; then
     exit 0
 fi
 
-if [ -e "$HOME/.biglinux_theme_applied" ]; then
-    exit 0
+if [ -e "$HOME/.big_desktop_theme" ]; then
+    exit
+else
+    biglinux-themes.sh --apply $(cat /etc/default-theme-biglinux)
+    # desabilita do autostart
+    cp /etc/xdg/autostart/first-login-theme.desktop $HOME/.config/autostart
+    echo "Hidden=true" >> $HOME/.config/autostart/first-login-theme.desktop
 fi
-
-> "$HOME/.biglinux_theme_applied"
-
-biglinux-themes.sh --apply $(cat /etc/default-theme-biglinux)
-echo "$(cat /etc/default-theme-biglinux)" > "$HOME/.big_desktop_theme"
