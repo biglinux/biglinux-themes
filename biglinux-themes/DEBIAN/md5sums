@@ -2,7 +2,7 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 f84f8763f5008509c85d5194c7d0a750  DEBIAN/dpkg-divert
 1f81ce250690d76e2332b4133ed54cd7  DEBIAN/preinst
 dc807f68d601dad97eef51535f2f6dcd  DEBIAN/postrm
-b6b816157ce43e7abf50eab426f75873  DEBIAN/control
+85d4f5340fab965acf5be89971748c2b  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 6147ab775869b3edafd2005a03974a5a  usr/share/plasma/desktoptheme/BigLinux-Arc-Dark/dialogs/background.svg
@@ -177,6 +177,6 @@ e5fbcd19a5a634e4fa28ea2baeb63b8d  usr/share/icons/breeze/apps/32/big-plugins.svg
 c55240d14334a37319e518d8e8795386  usr/share/icons/breeze/apps/64/big-logo.svg
 9ded7c4b747f2657531e072031c15930  usr/share/icons/breeze/apps/64/big-plasma-theme.svg
 5978dba1f4c4c5d5dd7370201c4e9c88  usr/share/icons/breeze/apps/64/big-plugins.svg
-15d77e027dd0e9c1500c956a81921e31  usr/bin/biglinux-themes.sh
-86f1bc2228ef5c8e3e3e6d051092f738  usr/bin/first-login-theme
 5117bee2a78ea9a981953131eba4c865  usr/bin/biglinux-themes-gui
+96cdd58e3f2c8d26ab5d7b68fa269699  usr/bin/biglinux-themes.sh
+be6e22d4face4bd0c53f5573e15fac69  usr/bin/first-login-theme
