@@ -9,4 +9,4 @@ biglinux-themes.sh --apply arc
 
 echo "arc" > "$HOME/.big_desktop_theme"
 
-kdialog --msgbox "Tema aplicado!"
+kdialog --msgbox $"Tema aplicado!"
