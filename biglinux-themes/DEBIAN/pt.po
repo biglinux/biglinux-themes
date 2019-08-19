@@ -1,0 +1,37 @@
+# Portuguese translations for biglinux-themes package.
+# Copyright (C) 2019 THE biglinux-themes'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the biglinux-themes package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: biglinux-themes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-19 04:46-0300\n"
+"PO-Revision-Date: 2019-08-18 22:57-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Temas"
+msgstr ""
+
+msgid ""
+"Passe o mouse sobre as opções a baixo e faça sua escolha, as alterações "
+"serão aplicadas nos temas GTK, QT, KWIN, Openbox, ícones e fontes, para que "
+"o tema funcione adequadamente, após alternar, recomendo que feche a sessão e "
+"faça login novamente no sistema:"
+msgstr ""
+
+msgid "Tema Arc"
+msgstr ""
+
+msgid "Tema Adapta"
+msgstr ""
+
+msgid "Tema Dark"
+msgstr ""

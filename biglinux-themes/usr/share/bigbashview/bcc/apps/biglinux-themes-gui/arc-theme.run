@@ -1,3 +1,10 @@
+#!/bin/bash
+
+#Translation
+export TEXTDOMAINDIR="/usr/share/locale"
+export TEXTDOMAIN=biglinux-themes
+
+
 biglinux-themes.sh --apply arc
 
 echo "arc" > "$HOME/.big_desktop_theme"

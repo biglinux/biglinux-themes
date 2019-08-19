@@ -2,7 +2,7 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 f84f8763f5008509c85d5194c7d0a750  DEBIAN/dpkg-divert
 1f81ce250690d76e2332b4133ed54cd7  DEBIAN/preinst
 dc807f68d601dad97eef51535f2f6dcd  DEBIAN/postrm
-85d4f5340fab965acf5be89971748c2b  DEBIAN/control
+e5009b58b63d81cf369e524c88cf9bef  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 6147ab775869b3edafd2005a03974a5a  usr/share/plasma/desktoptheme/BigLinux-Arc-Dark/dialogs/background.svg
@@ -159,8 +159,8 @@ d7c1797ff9c5d38bc1958483d1f16710  usr/share/biglinux/themes/dark/.config/kdeglob
 09e0e618badefcf29989b7c52906f6ad  usr/share/biglinux/themes/dark/.config/gtkrc-2.0
 bdf5bed9748c9c3dff4c8959d5770b51  usr/share/biglinux/themes/dark/.config/gtkrc
 b0998ef31c002687ab52504e299284d1  usr/share/biglinux/themes/dark/.gtkrc-2.0
-a734cb017054355b233d06eaa2c037b3  usr/share/applications/Executar (Krunner).desktop
-1fabe24f33a75f02bffa7fc6334b596a  usr/share/applications/biglinux-themes-gui.desktop
+e767f495be50faac77d5b249c38de1c4  usr/share/applications/biglinux-themes-gui.desktop
+43d2d09cd8b0a5eb2a42fd8a15d3842a  usr/share/applications/Executar (Krunner).desktop
 0c1f3587437777fc1074de31727c2c5b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta.png
 c798a2943b573aad0faf8fdcc3535715  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc.png
 4b365c4d0a40c74ddd66734db881de2e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark.png
@@ -168,6 +168,8 @@ c798a2943b573aad0faf8fdcc3535715  usr/share/bigbashview/bcc/apps/biglinux-themes
 d23b8bc9384a592a30365fab0f2197b4  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
 0c2ffdca060decf03ed4c795e488fbf0  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
 62633abd5e419a0526cea9cfe3c8e495  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
+9ded7c4b747f2657531e072031c15930  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.svg
+c3f23fb4653a4499a4e887596c2bf59e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png
 627db968b7c08cf4dc95b6cc569da200  usr/share/icons/breeze/apps/22/big-logo.svg
 0ca17759ee4027de64cdb470fb3cef46  usr/share/icons/breeze/apps/22/big-plasma-theme.svg
 e4938e58a2f1b15f80df4aa7c3ef9376  usr/share/icons/breeze/apps/22/big-plugins.svg

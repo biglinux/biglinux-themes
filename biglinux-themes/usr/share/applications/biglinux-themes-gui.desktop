@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Settings;
 Exec=biglinux-themes-gui
-Icon=/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.svg
+Icon=/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png
 Name[pt_BR]=Aparência
 Name=Appearance
 StartupNotify=true
