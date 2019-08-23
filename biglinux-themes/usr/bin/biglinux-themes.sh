@@ -16,6 +16,8 @@ case "$1" in
         echo "$2" > "$HOME/.big_desktop_theme"
         if [ "$XDG_CURRENT_DESKTOP" = "LXQt" ]; then
             openbox --restart
+	    qdbus org.pcmanfm.PCManFM /Application "quit"
+            pcmanfm-qt --desktop --profile=lxqt
         fi
    else
         echo "Theme not found."
