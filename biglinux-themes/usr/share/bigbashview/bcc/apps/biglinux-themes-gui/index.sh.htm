@@ -4,6 +4,10 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=biglinux-themes
 
+# Don't group windows
+xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -set WM_CLASS "$$"
+
+
 # Import BigControlCenter base modules / Importa os módulos básicos do BigControlCenter
 # That's include jquery and materialize / Isso inclui o jquery e o materialize
 # http://materializecss.com/
@@ -189,6 +193,8 @@ $('.tooltipped').tooltip({
 
 EOF
 
+
+
 echo '<div id=page2>'
 echo '<div id="middle" class="bar"><h1>'
 
@@ -197,25 +203,22 @@ echo '<div id="middle" class="bar"><h1>'
   echo $"Passe o mouse sobre as opções a baixo e faça sua escolha, as alterações serão aplicadas nos temas GTK, QT, KWIN, Openbox, ícones e fontes, para que o tema funcione adequadamente, após alternar, recomendo que feche a sessão e faça login novamente no sistema:" '<p>'
 
 
-
-
-
 cat << EOF
 <br><br><br>
-      <input onclick="location.href = 'arc-theme.run'" name="option" type="radio" id="arc" value="arc" $checked_arc />
+      <input onclick="_run('./arc-theme.run')" name="option" type="radio" id="arc" value="arc" $checked_arc />
       <label for="arc" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=arc.png>">
 EOF
       echo $"Tema Arc"
 cat << EOF
 </label>
-      <input onclick="location.href = 'adapta-theme.run'" name="option" type="radio" id="adapta" value="adapta" $checked_adapta />
+      <input onclick="_run('./adapta-theme.run')" name="option" type="radio" id="adapta" value="adapta" $checked_adapta />
       <label for="adapta" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=adapta.png>">
 EOF
 echo $"Tema Adapta"
 cat << EOF
 </label>
 
-      <input onclick="location.href = 'dark-theme.run'" name="option" type="radio" id="dark" value="dark" $checked_dark />
+      <input onclick="_run('./dark-theme.run')" name="option" type="radio" id="dark" value="dark" $checked_dark />
       <label for="dark" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=dark.png>">
 EOF
 echo $"Tema Dark" '</label>'

@@ -4,7 +4,12 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=biglinux-themes
 
+windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
 biglinux-themes.sh --apply adapta
 
-kdialog --msgbox $"Tema aplicado!"
+echo "adapta" > "$HOME/.big_desktop_theme"
+
+
+
+kdialog --attach="$windowID" --msgbox $"Tema aplicado!"
