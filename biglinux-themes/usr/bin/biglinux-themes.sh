@@ -18,6 +18,7 @@ case "$1" in
             openbox --restart
 	    qdbus org.pcmanfm.PCManFM /Application "quit"
             pcmanfm-qt --desktop --profile=lxqt
+	    killall lxqt-panel && lxqt-panel &
         fi
    else
         echo "Theme not found."
