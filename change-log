@@ -1,0 +1,13 @@
+changelog biglinux-themes
+
+#remover arquivos kwinrc da pasta .config do thema
+rm /usr/share/biglinux/themes/adapta/.config/kwinrc
+rm /usr/share/biglinux/themes/arc/.config/kwinrc
+rm /usr/share/biglinux/themes/dark/.config/kwinrc
+
+#remover arquivos kdeglobals da pasta .config do thema
+rm /usr/share/biglinux/themes/adapta/.config/kdeglobals
+rm /usr/share/biglinux/themes/arc/.config/kdeglobals
+rm /usr/share/biglinux/themes/dark/.config/kdeglobals
+
+#add linha linha 16 no arquivo /usr/bin/biglinux-themes.sh >         bash $folder/$2.sh
