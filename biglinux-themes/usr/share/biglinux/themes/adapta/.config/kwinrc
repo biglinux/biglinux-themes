@@ -41,6 +41,9 @@ Top=None
 TopLeft=None
 TopRight=None
 
+[Plugins]
+contrastEnabled=true
+
 [TabBox]
 BorderActivate=9
 BorderAlternativeActivate=9

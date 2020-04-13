@@ -33,6 +33,22 @@ if [ "$theme_actual" = "dark" ]; then
 fi
 
 
+performance_actual="$(cat "$HOME/.big_performance")"
+
+if [ "$performance_actual" = "" ] || [ "$performance_actual" = "0" ]; then
+    checked_normal="checked"
+fi
+
+if [ "$performance_actual" = "1" ]; then
+    checked_optimized="checked"
+fi
+
+if [ "$performance_actual" = "2" ]; then
+    checked_performance="checked"
+fi
+
+
+
 
   echo '
   <body>
@@ -84,32 +100,36 @@ font-family: 'Droid Sans';
 
 
 #page2 {
-	margin-right: 18%;
-	margin-left: 18%;
+	margin-right: 16%;
+	margin-left: 16%;
 	height: 100%;
 }
 
 
 #middle {
-	display: table-cell;
-vertical-align: middle;
-width: 100%;
-padding-left: 8%;
-padding-right: 8%;
-padding-bottom: 15px;
-padding-top: 15%;
-font-size: 20px;
-display: block;
-box-sizing: border-box;
-text-align: center;
-border: 1px solid #ccc;
-border-top: 0px;
-border-bottom: 0px;
-argin-bottom:0px;
-height: 100%;
-	top: 0%;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 720px;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 15px;
+    padding-top: 10%;
+    font-size: 20px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    border-bottom: 0px;
+    argin-bottom: 0px;
+    height: 100%;
+    top: 0%;
 }
 
+.backdrop {
+background-color: rgba(111, 111, 111, 1);
+}
 
 .bar {
   position: relative;
@@ -137,7 +157,6 @@ line-height: 120%;}
 font-size:20px !important;
 margin-left:20px;
 margin-right:20px;
-margin-top:10%;
 }
 
 h1 {text-align:center;font-family:ubuntu;font-weight:400;font-size:20px;color:#fff;text-shadow:0em 0.05em 0 rgba(0,0,0,0.35)}
@@ -180,6 +199,87 @@ box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
 .bw button:hover {color:#fff;background-color:#353535;border-color:#353535}
 .blue .panel {max-width:960px;text-align:center;position:relative;margin:auto;}
 
+div#contentbig {
+    display: inline-flex;
+}
+
+div#theme {
+    display: grid;
+    justify-items: flex-start;
+    border: 2px solid #ffffff61;
+    margin-right: 26px;
+    margin-left: 26px;
+    padding-right: 0px;
+    padding-bottom: 28px;
+    border-radius: 11px;
+    padding-left: 2px;
+    padding-top: 24px;
+    min-width: 238px;
+}
+
+div#theme2 {
+display: inherit;
+    border: 2px solid #ffffff61;
+    margin-right: 26px;
+    margin-left: 26px;
+    padding-right: 0px;
+    padding-bottom: 28px;
+    border-radius: 11px;
+    padding-left: 2px;
+    padding-top: 24px;
+    min-width: 238px;
+}
+
+h2 {
+    margin-top: -38px;
+    margin-bottom: -7px;
+    margin-left: 10px;
+    height: 22px;
+    font-size: 22px;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
+}
+
+h3 {
+    margin-top: -38px;
+    margin-bottom: -7px;
+    margin-left: 10px;
+    height: 22px;
+    font-size: 22px;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
+}
+
+
+div#performance {
+    display: grid;
+    justify-items: flex-start;
+}
+
+
+
+div#contentbig {
+    margin-top: 70px;
+}
+
+label.tooltipped.with-gap {
+    margin-top: 14px;
+    margin-left: 21px;
+    margin-right: 50px;
+}
+
+div#theme2-2 {
+    margin-top: 30px;
+}
+
+.btn, .btn-large {
+    background-color: #a5a5a559;
+    border-radius: 10px;
+
+}
+
+.btn-large:hover {
+    background-color: #ffffffd9;
+    color: #000000;
+}
 
 </style>
 
@@ -198,35 +298,103 @@ EOF
 echo '<div id=page2>'
 echo '<div id="middle" class="bar"><h1>'
 
+MEMORY="$(($(grep MemTotal /proc/meminfo | awk '{print $2}') /1024))"
+
+NORMAL=$"Essa deve ser a melhor opção de desempenho<br>
+    para esse computador, mas você pode alternar<br>
+    entre os modos e escolher a sua preferência.<br><br>
+    As opções Otimizado e Performance, são dedicadas<br>
+    a computadores de baixo desempenho e não melhoram o<br>
+    desempenho em computadores de maior capacidade."
+    
+TOOLTIP_OTIMIZADO=$"Reduz o uso de memória e da placa de vídeo,
+      <br>com pequena redução dos recursos do sistema.<br><br>
+      Explicação avançada:<br>Utiliza a renderização QML via software, isso desativa<br>
+      a previsão de janelas ao passar o mouse na barra de tarefas,<br>
+      também impede o uso de alguns widgets do desktop que gerem<br>
+      gráficos em tempo real, por exemplo, o uso do monitor de<br>
+      processamento."
+      
+TOOLTIP_PERFORMANCE=$"Essa é a opção recomendada para computadores antigos.<br><br>Aplica as configurações do modo Otimizado<br>
+      e adiciona o uso do XRender no gerênciador de janelas,<br>
+      economizando mais recursos do computador.<br>
+      Removendo a maior parte dos efeitos das janelas."
 
 
-  echo $"Passe o mouse sobre as opções a baixo e faça sua escolha, as alterações serão aplicadas nos temas GTK, QT, KWIN, Openbox, ícones e fontes, para que o tema funcione adequadamente, após alternar, recomendo que feche a sessão e faça login novamente no sistema:" '<p>'
+if [ "$MEMORY" -le "3800" ] && [ "$(nproc)" -gt "1" ]; then
+    NORMAL=$"Esse computador deve funcionar consideravelmente<br>
+    melhor utilizando o modo Otimizado ou Performance."
+fi
 
+if [ [ "$(grep -i "virtualbox" /sys/devices/virtual/dmi/id/product_name)" != "" ]; then
+    NORMAL=$"O sistema está funcionando dentro do VirtualBox,<br>
+    Recomendo que utilize o modo Otimizado ou Performance."
+fi
+
+
+  echo $"Esse sistema é completamente personalizável, mas, para facilitar disponibilizamos três opções de temas e também três opções de desempenho.
+<br><br>
+Caso precise de algum ajuste extra, utilize as configurações avançadas, onde você pode ajustar detalhadamente as suas preferências."
+  echo "<br><br>"
 
 cat << EOF
-<br><br><br>
+
+<div id=contentbig>
+<div id=theme>
+<h2>Tema</h2>
       <input onclick="_run('./arc-theme.run')" name="option" type="radio" id="arc" value="arc" $checked_arc />
       <label for="arc" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=arc.png>">
 EOF
-      echo $"Tema Arc"
+      echo $"Arc"
 cat << EOF
 </label>
       <input onclick="_run('./adapta-theme.run')" name="option" type="radio" id="adapta" value="adapta" $checked_adapta />
       <label for="adapta" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=adapta.png>">
 EOF
-echo $"Tema Adapta"
+echo $"Adapta"
 cat << EOF
 </label>
 
       <input onclick="_run('./dark-theme.run')" name="option" type="radio" id="dark" value="dark" $checked_dark />
       <label for="dark" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=dark.png>">
 EOF
-echo $"Tema Dark" '</label>'
+echo $"Dark" '</label>'
+
+echo "</div>"
+
+cat << EOF
+<div id=performance>
+<div id=theme>
+<h2>Desempenho</h2>
+      <input onclick="_run('./normal.run')" name="option2" type="radio" id="normal" value="normal" $checked_normal>
+      <label for="normal" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<br>$NORMAL<br><br>">
+EOF
+      echo $"Normal"
+cat << EOF
+</label>
+      <input onclick="_run('./optimized.run')" name="option2" type="radio" id="optimized" value="optimized" $checked_optimized>
+      <label for="optimized" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<br>$TOOLTIP_OTIMIZADO<br><br>">
+EOF
+echo $"Otimizado"
+cat << EOF
+</label>
+      <input onclick="_run('./performance.run')" name="option2" type="radio" id="performance2" value="performance2" $checked_performance>
+      <label for="performance2" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<br>$TOOLTIP_PERFORMANCE<br><br>">
+EOF
+echo $"Performance"
+
+echo "</div></div></div>"
+
+
+echo '<div id=theme2-2>
+<a class="waves-effect waves-light btn-large"' "onclick=\"_run('./advanced.run')\">" $"Configurações Avançadas" '</a>
+</div>
+</div>'
 
 
 
 
-    
+echo "</div></div>"
 
 
 echo '</h1></div>'

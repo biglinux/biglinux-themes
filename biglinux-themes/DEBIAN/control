@@ -1,10 +1,10 @@
 Package: biglinux-themes
-Version: 1.0.1-1big2
-Depends: arc-theme, adapta-gtk-theme, fonts-cabin, fonts-cantarell, fonts-comfortaa, fonts-comic-neue, fonts-courier-prime, fonts-font-awesome, fonts-inconsolata, plasma-framework, bigbashview
+Version: 1.0.3-1big9
+Depends: arc-theme, adapta-gtk-theme, fonts-cabin, fonts-cantarell, fonts-comfortaa, fonts-comic-neue, fonts-courier-prime, fonts-font-awesome, fonts-inconsolata, plasma-framework, bigbashview, plasmashell-fix
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:3032
+Installed-Size:3076
 Description: BigLinux themes
 

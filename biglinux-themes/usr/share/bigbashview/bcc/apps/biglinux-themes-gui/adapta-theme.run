@@ -12,4 +12,8 @@ echo "adapta" > "$HOME/.big_desktop_theme"
 
 
 
-kdialog --attach="$windowID" --msgbox $"Tema aplicado!"
+kdialog --attach="$windowID" --msgbox $"Tema aplicado!
+
+Finalize a sessão e faça login novamente
+Para que todos os programas utilizem a 
+nova configuração de tema." --title "Tema"
