@@ -32,6 +32,9 @@ if [ "$theme_actual" = "dark" ]; then
     checked_dark="checked"
 fi
 
+if [ "$theme_actual" = "breeze" ]; then
+    checked_breeze="checked"
+fi
 
 performance_actual="$(cat "$HOME/.big_performance")"
 
@@ -303,24 +306,19 @@ MEMORY="$(($(grep MemTotal /proc/meminfo | awk '{print $2}') /1024))"
 NORMAL=$"Essa deve ser a melhor opção de desempenho<br>
     para esse computador, mas você pode alternar<br>
     entre os modos e escolher a sua preferência.<br><br>
-    
     As opções Otimizado e Performance, são dedicadas<br>
     a computadores de baixo desempenho e não melhoram o<br>
     desempenho em computadores de maior capacidade."
     
 TOOLTIP_OTIMIZADO=$"Reduz o uso de memória e da placa de vídeo,
       <br>com pequena redução dos recursos do sistema.<br><br>
-      
-      Explicação avançada:<br>
-      Utiliza a renderização QML via software, isso desativa<br>
+      Explicação avançada:<br>Utiliza a renderização QML via software, isso desativa<br>
       a previsão de janelas ao passar o mouse na barra de tarefas,<br>
       também impede o uso de alguns widgets do desktop que gerem<br>
       gráficos em tempo real, por exemplo, o uso do monitor de<br>
       processamento."
       
-TOOLTIP_PERFORMANCE=$"Essa é a opção recomendada para computadores antigos.<br><br>
-
-      Aplica as configurações do modo Otimizado<br>
+TOOLTIP_PERFORMANCE=$"Essa é a opção recomendada para computadores antigos.<br><br>Aplica as configurações do modo Otimizado<br>
       e adiciona o uso do XRender no gerênciador de janelas,<br>
       economizando mais recursos do computador.<br>
       Removendo a maior parte dos efeitos das janelas."
@@ -339,7 +337,6 @@ fi
 
   echo $"Esse sistema é completamente personalizável, mas, para facilitar disponibilizamos três opções de temas e também três opções de desempenho.
 <br><br>
-
 Caso precise de algum ajuste extra, utilize as configurações avançadas, onde você pode ajustar detalhadamente as suas preferências."
   echo "<br><br>"
 
@@ -365,6 +362,13 @@ cat << EOF
       <label for="dark" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=dark.png>">
 EOF
 echo $"Dark" '</label>'
+cat << EOF
+</label>
+
+      <input onclick="_run('./breeze-theme.run')" name="option" type="radio" id="breeze" value="breeze" $checked_breeze />
+      <label for="breeze" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=breeze.png>">
+EOF
+echo $"Breeze" '</label>'
 
 echo "</div>"
 

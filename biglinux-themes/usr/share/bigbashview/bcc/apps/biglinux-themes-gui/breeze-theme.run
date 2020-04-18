@@ -6,9 +6,9 @@ export TEXTDOMAIN=biglinux-themes
 
 windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
-biglinux-themes.sh --apply adapta
+biglinux-themes.sh --apply breeze
 
-echo "adapta" > "$HOME/.big_desktop_theme"
+echo "breeze" > "$HOME/.big_desktop_theme"
 
 
 
