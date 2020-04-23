@@ -4,9 +4,21 @@ package_name=biglinux-themes
 case "$1" in
   remove)
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
     ;;
   purge)
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
 ;;
 esac
 exit 0

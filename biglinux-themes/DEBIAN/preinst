@@ -5,11 +5,41 @@ mkdir -p "/usr/share/dpkgdivert/biglinux-themes"
 case "$1" in
   install)
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareplasmadesktopthemedefaulticonsstart.svgz" --rename "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetsbreeze-close-symbolic.svg" --rename "/usr/share/themes/Breeze/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetstitlebutton-close@2.png" --rename "/usr/share/themes/Breeze/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetsbreeze-close-symbolic.svg" --rename "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close@2.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
     ;;
   upgrade)
 if [ "$(dpkg-divert --list "/usr/share/plasma/desktoptheme/default/icons/start.svgz")" = "" ]
 then
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareplasmadesktopthemedefaulticonsstart.svgz" --rename "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze/assets/breeze-close-symbolic.svg")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetsbreeze-close-symbolic.svg" --rename "/usr/share/themes/Breeze/assets/breeze-close-symbolic.svg"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze/assets/titlebutton-close@2.png")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetstitlebutton-close@2.png" --rename "/usr/share/themes/Breeze/assets/titlebutton-close@2.png"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze/assets/titlebutton-close.png")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreezeassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze/assets/titlebutton-close.png"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetsbreeze-close-symbolic.svg" --rename "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close@2.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
+fi
+if [ "$(dpkg-divert --list "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
 fi
 ;;
 esac
