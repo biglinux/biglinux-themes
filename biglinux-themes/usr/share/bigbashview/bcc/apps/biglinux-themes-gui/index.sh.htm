@@ -303,6 +303,9 @@ echo '<div id="middle" class="bar"><h1>'
 
 MEMORY="$(($(grep MemTotal /proc/meminfo | awk '{print $2}') /1024))"
 
+THEME_TITLE=$"Tema"
+PERFORMANCE_TITLE=$"Desempenho"
+
 NORMAL=$"Essa deve ser a melhor opção de desempenho<br>
     para esse computador, mas você pode alternar<br>
     entre os modos e escolher a sua preferência.<br><br>
@@ -344,7 +347,7 @@ cat << EOF
 
 <div id=contentbig>
 <div id=theme>
-<h2>Tema</h2>
+<h2>$THEME_TITLE</h2>
       <input onclick="_run('./arc-theme.run')" name="option" type="radio" id="arc" value="arc" $checked_arc />
       <label for="arc" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=arc.png>">
 EOF
@@ -375,7 +378,7 @@ echo "</div>"
 cat << EOF
 <div id=performance>
 <div id=theme>
-<h2>Desempenho</h2>
+<h2>$PERFORMANCE_TITLE</h2>
       <input onclick="_run('./normal.run')" name="option2" type="radio" id="normal" value="normal" $checked_normal>
       <label for="normal" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<br>$NORMAL<br><br>">
 EOF

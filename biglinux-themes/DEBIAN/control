@@ -5,6 +5,6 @@ Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
 Section: admin
 Priority: optional
-Installed-Size:3180
+Installed-Size:3188
 Description: BigLinux themes
 
