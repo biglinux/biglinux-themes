@@ -127,7 +127,7 @@ Theme=breeze
 [KDE]
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breeze.desktop
-ShowDeleteCommand=false
+ShowDeleteCommand=true
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 SingleClick=false

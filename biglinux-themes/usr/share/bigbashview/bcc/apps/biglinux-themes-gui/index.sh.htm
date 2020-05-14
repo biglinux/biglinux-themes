@@ -117,7 +117,7 @@ font-family: 'Droid Sans';
     padding-left: 6%;
     padding-right: 6%;
     padding-bottom: 15px;
-    padding-top: 10%;
+    padding-top: 3%;
     font-size: 20px;
     display: block;
     box-sizing: border-box;
@@ -260,7 +260,7 @@ div#performance {
 
 
 div#contentbig {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 label.tooltipped.with-gap {
@@ -270,7 +270,7 @@ label.tooltipped.with-gap {
 }
 
 div#theme2-2 {
-    margin-top: 30px;
+    margin-top: 65px;
 }
 
 .btn, .btn-large {
@@ -283,6 +283,7 @@ div#theme2-2 {
     background-color: #ffffffd9;
     color: #000000;
 }
+
 
 </style>
 
@@ -338,7 +339,7 @@ if [ [ "$(grep -i "virtualbox" /sys/devices/virtual/dmi/id/product_name)" != "" 
 fi
 
 
-  echo $"Esse sistema é completamente personalizável, mas para facilitar disponibilizamos três opções de temas e também três opções de desempenho.
+  echo $"Esse sistema é completamente personalizável, mas para facilitar disponibilizamos quatro opções de temas e também três opções de desempenho.
 <br><br>
 Caso precise de algum ajuste extra, utilize as configurações avançadas, onde você pode ajustar detalhadamente as suas preferências."
   echo "<br><br>"
@@ -349,27 +350,27 @@ cat << EOF
 <div id=theme>
 <h2>$THEME_TITLE</h2>
       <input onclick="_run('./arc-theme.run')" name="option" type="radio" id="arc" value="arc" $checked_arc />
-      <label for="arc" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=arc.png>">
+      <label for="arc" class="tooltipped with-gap" data-position="right" data-delay="50" data-tooltip="<img src=arc.png>">
 EOF
       echo $"Arc"
 cat << EOF
 </label>
       <input onclick="_run('./adapta-theme.run')" name="option" type="radio" id="adapta" value="adapta" $checked_adapta />
-      <label for="adapta" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<img src=adapta.png>">
+      <label for="adapta" class="tooltipped with-gap" data-position="right" data-delay="50" data-tooltip="<img src=adapta.png>">
 EOF
 echo $"Adapta"
 cat << EOF
 </label>
 
       <input onclick="_run('./dark-theme.run')" name="option" type="radio" id="dark" value="dark" $checked_dark />
-      <label for="dark" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=dark.png>">
+      <label for="dark" class="tooltipped with-gap tool03" data-position="right" data-delay="50" data-tooltip="<img src=dark.png>">
 EOF
 echo $"Dark" '</label>'
 cat << EOF
 </label>
 
       <input onclick="_run('./breeze-theme.run')" name="option" type="radio" id="breeze" value="breeze" $checked_breeze />
-      <label for="breeze" class="tooltipped with-gap tool03" data-position="top" data-delay="50" data-tooltip="<img src=breeze.png>">
+      <label for="breeze" class="tooltipped with-gap tool03" data-position="right" data-delay="50" data-tooltip="<img src=breeze.png>">
 EOF
 echo $"Breeze" '</label>'
 

@@ -70,6 +70,7 @@ NextFocusPrefersMouse=false
 SeparateScreenFocus=false
 SnapOnlyWhenOverlapping=false
 WindowSnapZone=10
+Placement=Centered
 
 [org.kde.kdecoration2]
 BorderSize=None
