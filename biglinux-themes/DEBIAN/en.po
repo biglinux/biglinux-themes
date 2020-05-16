@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-themes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 05:03-0300\n"
-"PO-Revision-Date: 2020-04-23 04:40-0300\n"
+"POT-Creation-Date: 2020-05-16 13:27-0300\n"
+"PO-Revision-Date: 2020-05-16 13:54-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -33,6 +33,12 @@ msgstr ""
 
 msgid "Desempenho em modo performance!"
 msgstr "Performance at light mode!"
+
+msgid "Desempenho em modo normal!"
+msgstr "Performance at normal mode!"
+
+msgid "Desempenho em modo otimizado!"
+msgstr "Performance at optimized mode!"
 
 msgid "Temas"
 msgstr "Themes"
@@ -108,7 +114,7 @@ msgstr ""
 
 msgid ""
 "Esse sistema é completamente personalizável, mas para facilitar "
-"disponibilizamos três opções de temas e também três opções de desempenho.\n"
+"disponibilizamos quatro opções de temas e também três opções de desempenho.\n"
 "<br><br>\n"
 "Caso precise de algum ajuste extra, utilize as configurações avançadas, onde "
 "você pode ajustar detalhadamente as suas preferências."
@@ -142,12 +148,6 @@ msgstr "Light"
 
 msgid "Configurações Avançadas"
 msgstr "Advanced Configurations"
-
-msgid "Desempenho em modo normal!"
-msgstr "Performance at normal mode!"
-
-msgid "Desempenho em modo otimizado!"
-msgstr "Performance at optimized mode!"
 
 #~ msgid "Tema aplicado!"
 #~ msgstr "Theme applied!"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: biglinux-themes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-12 05:03-0300\n"
+"POT-Creation-Date: 2020-05-16 13:27-0300\n"
 "PO-Revision-Date: 2019-08-18 22:57-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,17 +30,29 @@ msgstr ""
 "Para que todos los programas utilicen el\n"
 "Nueva configuración del tema."
 
-msgid "Tema"
-msgstr "Los Temas"
+msgid "Desempenho em modo performance!"
+msgstr "¡Rendimiento en modo performance!"
+
+msgid "Desempenho em modo normal!"
+msgstr "¡Rendimiento en modo normal!"
+
+msgid "Desempenho em modo otimizado!"
+msgstr "¡Rendimiento en modo optimizado!"
 
 msgid "Temas"
 msgstr "Los Temas"
 
+msgid "Tema"
+msgstr "Los Temas"
+
+msgid "Desempenho"
+msgstr ""
+
+#, fuzzy
 msgid ""
 "Essa deve ser a melhor opção de desempenho<br>\n"
 "    para esse computador, mas você pode alternar<br>\n"
 "    entre os modos e escolher a sua preferência.<br><br>\n"
-"    \n"
 "    As opções Otimizado e Performance, são dedicadas<br>\n"
 "    a computadores de baixo desempenho e não melhoram o<br>\n"
 "    desempenho em computadores de maior capacidade."
@@ -53,12 +65,12 @@ msgstr ""
 "a computadoras de bajo rendimiento y no mejoran el <br>\n"
 "rendimiento en computadoras de mayor capacidad."
 
+#, fuzzy
 msgid ""
 "Reduz o uso de memória e da placa de vídeo,\n"
 "      <br>com pequena redução dos recursos do sistema.<br><br>\n"
-"      \n"
-"      Explicação avançada:<br>\n"
-"      Utiliza a renderização QML via software, isso desativa<br>\n"
+"      Explicação avançada:<br>Utiliza a renderização QML via software, isso "
+"desativa<br>\n"
 "      a previsão de janelas ao passar o mouse na barra de tarefas,<br>\n"
 "      também impede o uso de alguns widgets do desktop que gerem<br>\n"
 "      gráficos em tempo real, por exemplo, o uso do monitor de<br>\n"
@@ -75,10 +87,10 @@ msgstr ""
 "    gráficos en tiempo real, por ejemplo, el uso del monitor de<br>\n"
 "    procesamiento."
 
+#, fuzzy
 msgid ""
-"Essa é a opção recomendada para computadores antigos.<br><br>\n"
-"\n"
-"      Aplica as configurações do modo Otimizado<br>\n"
+"Essa é a opção recomendada para computadores antigos.<br><br>Aplica as "
+"configurações do modo Otimizado<br>\n"
 "      e adiciona o uso do XRender no gerênciador de janelas,<br>\n"
 "      economizando mais recursos do computador.<br>\n"
 "      Removendo a maior parte dos efeitos das janelas."
@@ -104,11 +116,11 @@ msgstr ""
 "El sistema funciona dentro de VirtualBox, <br>\n"
 "    Recomiendo usar el modo Optimizado o Rendimiento."
 
+#, fuzzy
 msgid ""
-"Esse sistema é completamente personalizável, mas, para facilitar "
-"disponibilizamos três opções de temas e também três opções de desempenho.\n"
+"Esse sistema é completamente personalizável, mas para facilitar "
+"disponibilizamos quatro opções de temas e também três opções de desempenho.\n"
 "<br><br>\n"
-"\n"
 "Caso precise de algum ajuste extra, utilize as configurações avançadas, onde "
 "você pode ajustar detalhadamente as suas preferências."
 msgstr ""
@@ -128,6 +140,9 @@ msgstr "Adapta"
 msgid "Dark"
 msgstr "Oscuro"
 
+msgid "Breeze"
+msgstr ""
+
 msgid "Normal"
 msgstr "Normal"
 
@@ -139,15 +154,6 @@ msgstr "Performance"
 
 msgid "Configurações Avançadas"
 msgstr "Configuración Avanzada"
-
-msgid "Desempenho em modo normal!"
-msgstr "¡Rendimiento en modo normal!"
-
-msgid "Desempenho em modo otimizado!"
-msgstr "¡Rendimiento en modo optimizado!"
-
-msgid "Desempenho em modo performance!"
-msgstr "¡Rendimiento en modo performance!"
 
 #, fuzzy
 #~ msgid "Tema aplicado!"
