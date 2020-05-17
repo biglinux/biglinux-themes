@@ -8,8 +8,8 @@ export TEXTDOMAIN=biglinux-themes
 echo "2" > "$HOME/.big_performance"
 
 # Animation 0
-kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key AnimationSpeed 0
-kwriteconfig5 --file ~/.config/kdeglobals --group KDE --key AnimationDurationFactor 0
+kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key AnimationSpeed 2
+kwriteconfig5 --file ~/.config/kdeglobals --group KDE --key AnimationDurationFactor 0.25
 
 # XRender
 kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key Backend XRender

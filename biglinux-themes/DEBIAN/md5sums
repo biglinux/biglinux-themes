@@ -1,6 +1,4 @@
 0d74fd2baf0ff71007a8de75792a627b  DEBIAN/dpkg-divert
-6cf0fb5390660c380b80d1a5547ccc03  DEBIAN/en.mo
-9d2d7900c62d30280aa929d7b49df9d6  DEBIAN/en.po
 b6eb855dd6a6c0cd851fefbd61279f16  DEBIAN/es.po
 4edec0c5a7f36ef8cb6def0193915f0f  DEBIAN/languages
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
@@ -8,25 +6,27 @@ d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 88a2e95ae6b255d9cba2139d60abe387  DEBIAN/preinst
 b8c99088906313fe7f4a56b7e67908a4  DEBIAN/pt.po
 07eafdc7c459eb5b4ab5213de5012e98  DEBIAN/biglinux-themes.pot
-462442bf207adbbedac9cee7eba31ddc  DEBIAN/control
+1f35e2fea210e59fe680cd97eac5cd47  DEBIAN/en.po
+5eabcd92fb19c171f0ccc21786b680d9  DEBIAN/en.mo
+be49162279585e4499d693ab812ff24b  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 b5f212c2bb86050f689e84b2d94fb54f  usr/bin/biglinux-themes.sh
 365bf2caa6734af809a73ae75a3b55bf  usr/bin/first-login-theme
-149b9f2e8f9843f57d875286c3ec5617  usr/bin/biglinux-themes-gui
+6e7a898d3be5d60f54a468b8fd054cd8  usr/bin/biglinux-themes-gui
 43d2d09cd8b0a5eb2a42fd8a15d3842a  usr/share/applications/Executar (Krunner).desktop
 7f3710e8d7abb17923015842c09b0f38  usr/share/applications/biglinux-themes-gui.desktop
 456019e16349eed3c343c7451c143de1  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze.png
 c798a2943b573aad0faf8fdcc3535715  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc.png
 cf5037c27a1946237fd1664fbc6dd4c9  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
-50f41f667737bc0e4ddc0d63cb34eb6c  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/performance.run
+e6840be170b85fe389dd8934ae8c3c72  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/performance.run
 60483c52dac5bc6a75dd4836e7929241  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze-theme.run
 c3f23fb4653a4499a4e887596c2bf59e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png
 4b365c4d0a40c74ddd66734db881de2e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark.png
 8d84c2955ab7d0c1c8a7376f7757c209  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
 9ded7c4b747f2657531e072031c15930  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.svg
 4b2f9c4e9a3556af66c9f8d40687a76e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/normal.run
-9505ac74278ad2ab9cbf98cc8e49a6cc  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/optimized.run
+699e6ec80e8a819d6268bab4d9ba024d  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/optimized.run
 fad4d563d9b4f02c5c8295a753a7915c  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
 0c1f3587437777fc1074de31727c2c5b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta.png
 8ba14f0a893eca0dfb441d004544cea2  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/advanced.run
@@ -79,7 +79,7 @@ e5fbcd19a5a634e4fa28ea2baeb63b8d  usr/share/icons/breeze/apps/32/big-plugins.svg
 c55240d14334a37319e518d8e8795386  usr/share/icons/breeze/apps/64/big-logo.svg
 9ded7c4b747f2657531e072031c15930  usr/share/icons/breeze/apps/64/big-plasma-theme.svg
 5978dba1f4c4c5d5dd7370201c4e9c88  usr/share/icons/breeze/apps/64/big-plugins.svg
-6b0cb396631f0dfcd3cfa0d485692a6b  usr/share/locale/en/LC_MESSAGES/biglinux-themes.mo
+5eabcd92fb19c171f0ccc21786b680d9  usr/share/locale/en/LC_MESSAGES/biglinux-themes.mo
 5421112c7a95a039e5876a98b9c3838d  usr/share/locale/es/LC_MESSAGES/biglinux-themes.mo
 03d9e2de7a24478b19b071712ca0648f  usr/share/locale/pt/LC_MESSAGES/biglinux-themes.mo
 a8d1b8562021d5605ed07bcab93b5e57  usr/share/plasma/desktoptheme/BigLinux-Arc-Dark-Semi-Transparent/dialogs/background.svg
