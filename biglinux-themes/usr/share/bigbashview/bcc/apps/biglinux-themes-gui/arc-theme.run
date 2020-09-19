@@ -10,6 +10,10 @@ biglinux-themes.sh --apply arc
 
 echo "arc" > "$HOME/.big_desktop_theme"
 
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk2Theme Arc
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk3Theme Arc
+
+
 kdialog --attach="$windowID" --msgbox $"Tema aplicado!
 
 Finalize a sessão e faça login novamente

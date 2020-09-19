@@ -8,6 +8,9 @@ windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
 biglinux-themes.sh --apply dark
 
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk2Theme Arc-Dark
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk3Theme Arc-Dark
+
 echo "dark" > "$HOME/.big_desktop_theme"
 
 kdialog --attach="$windowID" --msgbox $"Tema aplicado!
