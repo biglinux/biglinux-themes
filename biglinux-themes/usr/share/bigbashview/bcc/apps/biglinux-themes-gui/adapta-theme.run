@@ -10,8 +10,7 @@ biglinux-themes.sh --apply adapta
 
 echo "adapta" > "$HOME/.big_desktop_theme"
 
-qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk2Theme Adapta-Eta
-qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk3Theme Adapta-Eta
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Adapta-Eta
 
 kdialog --attach="$windowID" --msgbox $"Tema aplicado!
 

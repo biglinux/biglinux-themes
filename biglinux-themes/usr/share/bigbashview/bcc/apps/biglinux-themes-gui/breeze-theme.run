@@ -10,8 +10,7 @@ biglinux-themes.sh --apply breeze
 
 echo "breeze" > "$HOME/.big_desktop_theme"
 
-qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk2Theme Breeze
-qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtk3Theme Breeze
+qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Breeze
 
 
 kdialog --attach="$windowID" --msgbox $"Tema aplicado!

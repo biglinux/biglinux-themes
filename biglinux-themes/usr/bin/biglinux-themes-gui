@@ -13,4 +13,4 @@ else
 fi
 
 cd /usr/share/bigbashview/bcc/apps/biglinux-themes-gui/
-LANGUAGE=$BIGBASHVIEW_LANG bigbashview index.sh.htm -s 1050x650 -i /usr/share/icons/breeze/apps/64/big-plasma-theme.svg
+LANGUAGE=$BIGBASHVIEW_LANG bigbashview index.sh.htm -t qt -s 1050x650 -i /usr/share/icons/breeze/apps/64/big-plasma-theme.svg

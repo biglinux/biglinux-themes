@@ -18,6 +18,9 @@ Id_1=77e3a8d9-802a-45cd-b14a-8a1ea3cb6cb6
 Number=1
 Rows=1
 
+[Effect-Blur]
+NoiseStrength=0
+
 [Effect-Cube]
 BorderActivate=9
 BorderActivateCylinder=9
@@ -49,7 +52,7 @@ BorderActivate=9
 BorderAlternativeActivate=9
 
 [Windows]
-ActiveMouseScreen=false
+ActiveMouseScreen=true
 AutoRaise=false
 AutoRaiseInterval=750
 BorderSnapZone=10
@@ -72,10 +75,12 @@ SnapOnlyWhenOverlapping=false
 WindowSnapZone=10
 Placement=Centered
 
-
 [org.kde.kdecoration2]
 BorderSize=None
 ButtonsOnLeft=MSF
 ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false
 library=org.kde.breeze
+
+[ModifierOnlyShortcuts]
+Meta=org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu

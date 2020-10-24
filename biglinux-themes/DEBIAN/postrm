@@ -10,6 +10,8 @@ case "$1" in
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/icons/breeze-dark/apps/48/kate.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/applications/org.freedesktop.IBus.Setup.desktop"
     ;;
   purge)
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/plasma/desktoptheme/default/icons/start.svgz"
@@ -19,6 +21,8 @@ case "$1" in
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
     dpkg-divert --package "$package_name" --rename --remove "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/icons/breeze-dark/apps/48/kate.svg"
+    dpkg-divert --package "$package_name" --rename --remove "/usr/share/applications/org.freedesktop.IBus.Setup.desktop"
 ;;
 esac
 exit 0

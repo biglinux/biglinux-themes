@@ -15,6 +15,23 @@ xprop -id "$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)" -f WM_CLASS 8s -
 
 theme_actual="$(cat "$HOME/.big_desktop_theme")"
 
+chromium_actual="$(cat "$HOME/.config/chromium-optimize")"
+
+
+if [ "$chromium_actual" = "" ]; then
+    checked_chromium_auto="checked"
+fi
+
+if [ "$chromium_actual" = "performance" ]; then
+    checked_chromium_yes="checked"
+fi
+
+if [ "$chromium_actual" = "optimize" ]; then
+    checked_chromium_no="checked"
+fi
+
+
+
 if [ "$theme_actual" = "" ]; then
     biglinux-themes.sh --apply arc
     checked_arc="checked"
@@ -118,7 +135,7 @@ font-family: 'Droid Sans';
     padding-right: 6%;
     padding-bottom: 15px;
     padding-top: 3%;
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     box-sizing: border-box;
     text-align: center;
@@ -157,12 +174,13 @@ font-weight:400;font-size:18px;
 line-height: 120%;}
 
 .with-gap {color: #ffffff !important;
-font-size:20px !important;
+font-size:17px !important;
 margin-left:20px;
 margin-right:20px;
 }
 
-h1 {text-align:center;font-family:ubuntu;font-weight:400;font-size:20px;color:#fff;text-shadow:0em 0.05em 0 rgba(0,0,0,0.35)}
+h1 {    line-height: 24px;
+text-align:center;font-family:ubuntu;font-weight:400;font-size:18px;color:#fff;text-shadow:0em 0.05em 0 rgba(0,0,0,0.35)}
 button {color:#454545;background:transparent;border-width:2px;border-style: solid;border-color: #454545;position:relative;margin:1em;display:inline-block;padding:0.5em 1em;transition:all 0.3s ease-in-out;text-align:center;
 font-family:ubuntu;font-weight:bold;font-size:18px}
 button:before, button:after {content:'';display:block;position:absolute;border-color:#454545;box-sizing:border-box;border-style:solid;width:1em;height:1em;transition:all 0.3s ease-in-out}
@@ -238,7 +256,7 @@ h2 {
     margin-bottom: -7px;
     margin-left: 10px;
     height: 22px;
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: 1px 1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
 }
 
@@ -247,7 +265,7 @@ h3 {
     margin-bottom: -7px;
     margin-left: 10px;
     height: 22px;
-    font-size: 22px;
+    font-size: 20px;
     text-shadow: 1px 1px 4px rgb(0, 0, 0), 1px 1px 4px rgb(0, 0, 0);
 }
 
@@ -262,6 +280,7 @@ div#performance {
 div#contentbig {
     margin-top: 30px;
 }
+
 
 label.tooltipped.with-gap {
     margin-top: 14px;
@@ -284,6 +303,58 @@ div#theme2-2 {
     color: #000000;
 }
 
+.chromium.col-md-2.waves-effect.waves-light.box {
+    justify-self: center;
+    margin-top: -6px;
+    margin-bottom: -22px;
+}
+
+.chromium.col-md-2.waves-effect.waves-light.box a {
+    color: #00b8ff !important;
+}
+
+
+.modal {
+    top: 50% !important;
+    transform: translate(0%, -50%) !important;
+    position: fixed;
+    left: 0;
+    background: url(01.jpg);
+    background-attachment: fixed;
+    right: 0;
+    color: white;
+    padding: 0;
+    max-height: 90%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 15px;
+    will-change: top, opacity;
+}
+
+#modal5, #modalAndroid {
+    width: 1000px;
+}
+
+.col-md-modal {
+    cursor: pointer;
+    padding: 0px;
+    margin: auto;
+    margin-top: 13px;
+    width: 400px;
+    background-color: #00000080;
+    border-radius: 19px;
+    padding-left: 24px;
+    box-shadow: 3px 2px 2px 0px rgba(0, 0, 0, 0.77);
+}
+
+.modal .modal-content {
+    padding: 24px;
+    background-color: #2a4090;
+}
+
+div#chromium2 {
+    margin-top: 21px;
+}
 
 </style>
 
@@ -293,9 +364,27 @@ $('.tooltipped').tooltip({
  html: "<img src='/usr/share/wallpapers/BigLinux/plants.jpg'>"
 });
 </script>
-
-
 EOF
+
+######################
+#
+# Modal
+#
+######################
+echo "<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  \$(document).ready(function(){
+    \$('.modal').modal();
+  });
+       
+</script>"
+
 
 
 
@@ -306,6 +395,8 @@ MEMORY="$(($(grep MemTotal /proc/meminfo | awk '{print $2}') /1024))"
 
 THEME_TITLE=$"Tema"
 PERFORMANCE_TITLE=$"Desempenho"
+CHROMIUM_TITLE=$"Navegador Chromium"
+CLOSE=$"Fechar"
 
 NORMAL=$"Essa deve ser a melhor opção de desempenho<br>
     para esse computador, mas você pode alternar<br>
@@ -339,7 +430,7 @@ if [ [ "$(grep -i "virtualbox" /sys/devices/virtual/dmi/id/product_name)" != "" 
 fi
 
 
-  echo $"Esse sistema é completamente personalizável, mas para facilitar disponibilizamos quatro opções de temas e também três opções de desempenho.
+  echo $"Esse sistema é completamente personalizável, mas para facilitar disponibilizamos quatro opções de temas, três opções de desempenho e configurações especiais para o navegador Chromium.
 <br><br>
 Caso precise de algum ajuste extra, utilize as configurações avançadas, onde você pode ajustar detalhadamente as suas preferências."
   echo "<br><br>"
@@ -396,6 +487,97 @@ cat << EOF
       <label for="performance2" class="tooltipped with-gap" data-position="top" data-delay="50" data-tooltip="<br>$TOOLTIP_PERFORMANCE<br><br>">
 EOF
 echo $"Performance"
+echo '</label>'
+
+
+
+
+
+
+
+######################################
+#
+#   CHROMIUM
+#
+######################################
+
+
+    NAME=$"Otimizar o Chromium"
+    COMMENT=$"Clique aqui e veja as opções de otimização<br>
+    do navegador Chromium, o navegador que<br>
+    recomendado no BigLinux."
+
+cat << EOF
+
+    <div class="chromium col-md-2 waves-effect waves-light box $CATEGORY"><a  href="#modal2"  class="tooltipped with-gap modal-trigger" data-position="top" data-delay="50" data-tooltip="$COMMENT">
+    <p class="name">$NAME</p>
+    </center></a>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+
+EOF
+
+echo '<div id=top>'
+echo $"Recomendo que você experimente por algum tempo o navegador Chromium instalado no BigLinux, pois ele possui configurações otimizadas para o sistema e também é utilizado na maior parte dos nossos Web Apps.<br><br>
+Uma das otimizações é a aceleração de vídeo utilizando a placa de vídeo, isso deixa o sistema mais leve e eficiente,<br>
+porém, essa opção não é adequada para todas as placas de vídeo e a detecção automática pode não ser  a melhor opção.<br><br>
+Se o navegador ou algum Web App estiver em uso quando essa configuração for alterada, é necessário fechar todos<br>
+e abrir novamente para que a alteração seja aplicada.<br><br>
+Escolha se o navegador deve utilizar a aceleração utilizando a placa de vídeo:"
+echo '</div>'
+
+
+cat << EOF
+<div id=chromium>
+      <div id=chromium2>
+      <input onclick="_run('./chromium-auto.run')" name="option3" type="radio" id="auto" value="auto" $checked_chromium_auto>
+      <label for="auto" class="with-gap">
+EOF
+      echo $"Detecção automática"
+cat << EOF
+</label>
+      <input onclick="_run('./chromium-yes.run')" name="option3" type="radio" id="yes" value="yes" $checked_chromium_yes>
+      <label for="yes" class="with-gap">
+EOF
+echo $"Ativar"
+cat << EOF
+</label>
+      <input onclick="_run('./chromium-no.run')" name="option3" type="radio" id="no" value="no" $checked_chromium_no>
+      <label for="no" class="with-gap">
+EOF
+echo $"Desativar"
+
+echo "</div></div>"
+
+    
+cat << EOF    
+    
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">$CLOSE</a>
+    </div>
+  </div>
+EOF
+
+
+######################################
+#
+#   CHROMIUM CLOSE
+#
+######################################
+
+
+
+
+
+
+
+
+
+
 
 echo "</div></div></div>"
 

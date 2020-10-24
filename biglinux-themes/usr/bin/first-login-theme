@@ -1,11 +1,35 @@
 #!/bin/bash
 
-if [ ! -e "/etc/default-theme-biglinux" ]; then
-    exit 0
-fi
-
-if [ -e "$HOME/.big_desktop_theme" ]; then
+if [ ! -e "/etc/default-theme-biglinux" ] || [ -e "$HOME/.big_desktop_theme" ]; then
     exit
+
 else
-    biglinux-themes.sh --apply $(cat /etc/default-theme-biglinux)
+
+    BIG_THEME="$(cat /etc/default-theme-biglinux)"
+    biglinux-themes.sh --apply $BIG_THEME
+
+    case "$BIG_THEME" in
+
+        arc)
+            qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Arc
+            exit
+        ;;
+
+        adapta)
+            qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Adapta-Eta
+            exit
+        ;;
+
+        breeze)
+            qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Breeze
+            exit
+        ;;
+
+        dark)
+            qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Arc-Dark
+            exit
+        ;;
+
+    esac
+
 fi

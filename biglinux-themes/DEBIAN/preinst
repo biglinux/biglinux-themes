@@ -11,6 +11,8 @@ case "$1" in
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetsbreeze-close-symbolic.svg" --rename "/usr/share/themes/Breeze-Dark/assets/breeze-close-symbolic.svg"
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close@2.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close@2.png"
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareiconsbreeze-darkapps48kate.svg" --rename "/usr/share/icons/breeze-dark/apps/48/kate.svg"
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareapplicationsorg.freedesktop.IBus.Setup.desktop" --rename "/usr/share/applications/org.freedesktop.IBus.Setup.desktop"
     ;;
   upgrade)
 if [ "$(dpkg-divert --list "/usr/share/plasma/desktoptheme/default/icons/start.svgz")" = "" ]
@@ -40,6 +42,14 @@ fi
 if [ "$(dpkg-divert --list "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png")" = "" ]
 then
     dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrsharethemesBreeze-Darkassetstitlebutton-close.png" --rename "/usr/share/themes/Breeze-Dark/assets/titlebutton-close.png"
+fi
+if [ "$(dpkg-divert --list "/usr/share/icons/breeze-dark/apps/48/kate.svg")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareiconsbreeze-darkapps48kate.svg" --rename "/usr/share/icons/breeze-dark/apps/48/kate.svg"
+fi
+if [ "$(dpkg-divert --list "/usr/share/applications/org.freedesktop.IBus.Setup.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/biglinux-themes/usrshareapplicationsorg.freedesktop.IBus.Setup.desktop" --rename "/usr/share/applications/org.freedesktop.IBus.Setup.desktop"
 fi
 ;;
 esac
