@@ -8,9 +8,11 @@ windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
 echo "0" > "$HOME/.big_performance"
 
-# Animation 0
+# Animation 1
 kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key AnimationSpeed 3
 kwriteconfig5 --file ~/.config/kdeglobals --group KDE --key AnimationDurationFactor ""
+kwriteconfig5 --file ~/.config/klaunchrc --group BusyCursorSettings --key Blinking false
+kwriteconfig5 --file ~/.config/klaunchrc --group BusyCursorSettings --key Bouncing true
 
 # Composition on
 kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key Enabled true

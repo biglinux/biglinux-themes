@@ -114,11 +114,11 @@ XftAntialias=true
 XftHintStyle=hintfull
 XftSubPixel=rgb
 fixed=Ubuntu Mono,13,-1,5,50,0,0,0,0,0
-font=Lato Medium,11,-1,5,63,0,0,0,0,0,Regular
-menuFont=Lato Medium,11,-1,5,63,0,0,0,0,0,Regular
+font=Lato Semibold,11,-1,5,63,0,0,0,0,0,Regular
+menuFont=Lato Semibold,11,-1,5,63,0,0,0,0,0,Regular
 shadeSortColumn=true
-smallestReadableFont=Lato Medium,9,-1,5,63,0,0,0,0,0,Regular
-toolBarFont=Lato Medium,11,-1,5,63,0,0,0,0,0,Regular
+smallestReadableFont=Lato Semibold,9,-1,5,63,0,0,0,0,0,Regular
+toolBarFont=Lato Semibold,11,-1,5,63,0,0,0,0,0,Regular
 widgetStyle=Breeze
 
 [Icons]
@@ -163,7 +163,7 @@ ToolButtonStyleOtherToolbars=TextBesideIcon
 [WM]
 activeBackground=34,45,50
 activeBlend=34,45,50
-activeFont=Lato Medium,12,-1,5,63,0,0,0,0,0,Regular
+activeFont=Lato Semibold,12,-1,5,63,0,0,0,0,0,Regular
 activeForeground=163,172,172
 inactiveBackground=34,45,50
 inactiveBlend=34,45,50
