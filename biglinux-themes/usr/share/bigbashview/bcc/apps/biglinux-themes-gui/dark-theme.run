@@ -10,7 +10,7 @@ biglinux-themes.sh --apply dark
 
 qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Arc-Dark
 
-echo "dark" > "$HOME/.big_desktotheme"
+echo "dark" > "$HOME/.big_desktop_theme"
 
 kdialog --attach="$windowID" --msgbox $"Tema aplicado!
 

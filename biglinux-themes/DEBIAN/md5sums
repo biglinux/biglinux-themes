@@ -8,7 +8,7 @@ b8c99088906313fe7f4a56b7e67908a4  DEBIAN/pt.po
 1f35e2fea210e59fe680cd97eac5cd47  DEBIAN/en.po
 5eabcd92fb19c171f0ccc21786b680d9  DEBIAN/en.mo
 7aa98179902c14cbd0a4b191264bb30a  DEBIAN/dpkg-divert
-86958ff967dcfcfda5a1eb0ef83463aa  DEBIAN/control
+fe61a529f2d8f9719b20507f57503245  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 b5f212c2bb86050f689e84b2d94fb54f  usr/bin/biglinux-themes.sh
@@ -16,24 +16,24 @@ d54fc149b00ef49c6f858cb37dd882b9  usr/bin/biglinux-themes-gui
 6c20cdf58c758c607bcbf72d01098bf5  usr/bin/first-login-theme
 43d2d09cd8b0a5eb2a42fd8a15d3842a  usr/share/applications/Executar (Krunner).desktop
 7f3710e8d7abb17923015842c09b0f38  usr/share/applications/biglinux-themes-gui.desktop
-76add3bcf173162d728e2c1fc6c78f06  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
 0c1f3587437777fc1074de31727c2c5b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta.png
 eb3b2f1976066085ed5fc5b8fa5c52ec  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/advanced.run
-a3d6c4b651750b77ca4c1f4d07122cb7  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
 c798a2943b573aad0faf8fdcc3535715  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc.png
 c3f23fb4653a4499a4e887596c2bf59e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png
 9ded7c4b747f2657531e072031c15930  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.svg
-0853b2387a3666574f8d758c8b7a1983  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze-theme.run
 456019e16349eed3c343c7451c143de1  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze.png
 bc76487e43995e6e01afccc6ef3c4d24  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/chromium-auto.run
 ea3f2ab26b1409d97ddcfb4a5347d91c  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/chromium-no.run
 a15d2f1967e5029f3b7e3ad8314f92f9  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/chromium-yes.run
-ab05adbd543414c80ff938220b2217d5  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
 4b365c4d0a40c74ddd66734db881de2e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark.png
-8a367cd41769097823a831cb0e6150a6  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
 35c9eb9964b1bd0cd018c39ea03307cf  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/performance.run
 38723d69ea25e7b09bb3754e06c0b76b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/optimized.run
 050a022dacdd65d030ef22f240416c7e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/normal.run
+5dce73128f700642974f8a540c1d78f8  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
+30ecb7bc3d6b0ef3269039b3e6c94760  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
+008a8fbe7dc395d424461e72f080e393  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze-theme.run
+4136e8fe953fe353b23bcbe892de539b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
+45af24fe3a76472831685b88c2a4796f  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
 1a7bddc0e2b8a5246bac783e742d7868  usr/share/biglinux/themes/adapta/.config/gtk-3.0/settings.ini
 726e39e504a7a06631e4e98db1ec8cb0  usr/share/biglinux/themes/adapta/.config/lxqt/lxqt.conf
 57bd10e001b566ec6011e5128accbaf0  usr/share/biglinux/themes/adapta/.config/openbox/lxqt-rc.xml
@@ -42,7 +42,7 @@ d824d4ce355493082415553a6d873568  usr/share/biglinux/themes/adapta/.config/xsett
 dcb423ccadf8875359abf7636867176d  usr/share/biglinux/themes/adapta/.config/gtkrc
 23dde451d1adea70ed33481f0a5935f2  usr/share/biglinux/themes/adapta/.config/gtkrc-2.0
 acb62924f86c1349d19637204e751bb9  usr/share/biglinux/themes/adapta/.config/kwinrc
-e40d622d04142c3e4487700a85300d62  usr/share/biglinux/themes/adapta/.config/kdeglobals
+2bd908b7ed19632466d9c43621fc75d4  usr/share/biglinux/themes/adapta/.config/kdeglobals
 8b4b861b7b0ed67a40387868be552552  usr/share/biglinux/themes/adapta/.gtkrc-2.0
 ca37c717011bebdada56aef45f33de6e  usr/share/biglinux/themes/arc/.config/gtk-3.0/settings.ini
 726e39e504a7a06631e4e98db1ec8cb0  usr/share/biglinux/themes/arc/.config/lxqt/lxqt.conf

@@ -8,7 +8,7 @@ windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
 biglinux-themes.sh --apply breeze
 
-echo "breeze" > "$HOME/.big_desktotheme"
+echo "breeze" > "$HOME/.big_desktop_theme"
 
 qdbus org.kde.GtkConfig /GtkConfig org.kde.GtkConfig.setGtkTheme Breeze
 
