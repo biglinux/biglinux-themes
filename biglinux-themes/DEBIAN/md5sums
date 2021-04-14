@@ -8,7 +8,7 @@ b8c99088906313fe7f4a56b7e67908a4  DEBIAN/pt.po
 1f35e2fea210e59fe680cd97eac5cd47  DEBIAN/en.po
 5eabcd92fb19c171f0ccc21786b680d9  DEBIAN/en.mo
 7aa98179902c14cbd0a4b191264bb30a  DEBIAN/dpkg-divert
-fe61a529f2d8f9719b20507f57503245  DEBIAN/control
+ab88655a940a5c543591ce4377827fc6  DEBIAN/control
 f86ced29736ff78c8471e8488f94774e  etc/xdg/autostart/first-login-theme.desktop
 c7f77311f875ddca95ff2289b686f954  etc/xdg/autostart/remove-ksplash-link.desktop
 b5f212c2bb86050f689e84b2d94fb54f  usr/bin/biglinux-themes.sh
@@ -29,11 +29,11 @@ a15d2f1967e5029f3b7e3ad8314f92f9  usr/share/bigbashview/bcc/apps/biglinux-themes
 35c9eb9964b1bd0cd018c39ea03307cf  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/performance.run
 38723d69ea25e7b09bb3754e06c0b76b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/optimized.run
 050a022dacdd65d030ef22f240416c7e  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/normal.run
-5dce73128f700642974f8a540c1d78f8  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
-30ecb7bc3d6b0ef3269039b3e6c94760  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
-008a8fbe7dc395d424461e72f080e393  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze-theme.run
-4136e8fe953fe353b23bcbe892de539b  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
-45af24fe3a76472831685b88c2a4796f  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
+76add3bcf173162d728e2c1fc6c78f06  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/adapta-theme.run
+a3d6c4b651750b77ca4c1f4d07122cb7  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/arc-theme.run
+0853b2387a3666574f8d758c8b7a1983  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/breeze-theme.run
+ab05adbd543414c80ff938220b2217d5  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/dark-theme.run
+8a367cd41769097823a831cb0e6150a6  usr/share/bigbashview/bcc/apps/biglinux-themes-gui/index.sh.htm
 1a7bddc0e2b8a5246bac783e742d7868  usr/share/biglinux/themes/adapta/.config/gtk-3.0/settings.ini
 726e39e504a7a06631e4e98db1ec8cb0  usr/share/biglinux/themes/adapta/.config/lxqt/lxqt.conf
 57bd10e001b566ec6011e5128accbaf0  usr/share/biglinux/themes/adapta/.config/openbox/lxqt-rc.xml
