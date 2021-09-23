@@ -1,0 +1,279 @@
+# Portuguese translations for  package.
+# Copyright (C) 2021 THE 'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the  package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-23 12:11-0300\n"
+"PO-Revision-Date: 2021-09-23 12:11-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid ""
+"Tema aplicado!\n"
+"\n"
+"Finalize a sessão e faça login novamente\n"
+"Para que todos os programas utilizem a \n"
+"nova configuração de tema."
+msgstr ""
+
+msgid ""
+"Configuração alterada, se estiver utilizando o navegador, reinicie-o para "
+"que a nova configuração seja aplicada."
+msgstr ""
+
+msgid "Se estiver utilizando algum navegador, feche-o e abra novamente!"
+msgstr ""
+
+msgid "Desempenho em modo normal!"
+msgstr ""
+
+msgid "Desempenho em modo otimizado!"
+msgstr ""
+
+msgid "Desempenho em modo performance!"
+msgstr ""
+
+msgid "Desempenho do desktop"
+msgstr ""
+
+msgid "Aceleração do navegador"
+msgstr ""
+
+msgid "Usabilidade"
+msgstr ""
+
+msgid "Tema dos aplicativos"
+msgstr ""
+
+msgid "Temas"
+msgstr ""
+
+msgid "Fechar"
+msgstr ""
+
+msgid "Bordas arredondadas."
+msgstr ""
+
+msgid ""
+"Esse tema possui transparências com efeitos que<br>podem tornar o sistema "
+"lento em computadores<br>antigos ou ambientes virtualizados."
+msgstr ""
+
+msgid "Temas, desempenho e usabilidade"
+msgstr ""
+
+msgid "Temas, Desempenho e Usabilidade"
+msgstr ""
+
+msgid "Desempenho"
+msgstr ""
+
+msgid "Navegador Brave"
+msgstr ""
+
+msgid ""
+"Essa deve ser a melhor opção de desempenho<br>\n"
+"    para esse computador, mas você pode alternar<br>\n"
+"    entre os modos e escolher a sua preferência.<br><br>\n"
+"    As opções Otimizado e Performance, são dedicadas<br>\n"
+"    a computadores de baixo desempenho e não melhoram o<br>\n"
+"    desempenho em computadores de maior capacidade."
+msgstr ""
+
+msgid ""
+"Reduz o uso de memória e da placa de vídeo,\n"
+"      <br>com pequena redução dos recursos do sistema.<br><br>\n"
+"      Explicação avançada:<br>Utiliza a renderização QML via software, isso "
+"desativa<br>\n"
+"      a previsão de janelas ao passar o mouse na barra de tarefas,<br>\n"
+"      também impede o uso de alguns widgets do desktop que gerem<br>\n"
+"      gráficos em tempo real, por exemplo, o uso do monitor de<br>\n"
+"      processamento."
+msgstr ""
+
+msgid ""
+"Essa é a opção recomendada para computadores antigos.<br><br>Aplica as "
+"configurações do modo Otimizado<br>\n"
+"      e adiciona o uso do XRender no gerênciador de janelas,<br>\n"
+"      economizando mais recursos do computador.<br>\n"
+"      Removendo a maior parte dos efeitos das janelas."
+msgstr ""
+
+msgid ""
+"Utiliza os botões das bordas das janelas<br>\n"
+"no lado esquerdo."
+msgstr ""
+
+msgid ""
+"Essa configuração também é<br>\n"
+"válida para o touchpad."
+msgstr ""
+
+msgid ""
+"A pesquisa por arquivos aparece ao<br>\n"
+"utilizar o menu do sistema, essa opção pode<br>\n"
+"consumir muitos recursos e deixar lento o<br>\n"
+"uso do sistema."
+msgstr ""
+
+msgid ""
+"Para evitar que a área de trabalho seja<br>\n"
+"desconfigurada acidentalmente, mantenha essa<br>\n"
+"opção ativa."
+msgstr ""
+
+msgid ""
+"Esta configuração funciona nos navegadores:\n"
+"<br>\n"
+"Brave, Chromium, Firefox, Google Chrome, Opera e Vivaldi."
+msgstr ""
+
+msgid ""
+"O sistema irá definir se utiliza ou não a aceleração<br>\n"
+"utilizando a placa de vídeo nos navegadores."
+msgstr ""
+
+msgid ""
+"Utilizar a aceleração de vídeo<br>\n"
+"nos navegadores. Em alguns computadores<br>\n"
+"essa opção pode gerar vídeos distorcidos."
+msgstr ""
+
+msgid ""
+"Não utilizar a aceleração de vídeo<br>\n"
+"nos navegadores."
+msgstr ""
+
+msgid ""
+"Esse computador deve funcionar consideravelmente<br>\n"
+"    melhor utilizando o modo Otimizado ou Performance."
+msgstr ""
+
+msgid ""
+"O sistema está funcionando dentro do VirtualBox,<br>\n"
+"    Recomendo que utilize o modo Otimizado ou Performance."
+msgstr ""
+
+msgid "Breeze"
+msgstr ""
+
+msgid "Breeze Dark"
+msgstr ""
+
+msgid "Lightly"
+msgstr ""
+
+msgid "Lightly Dark"
+msgstr ""
+
+msgid "Materia"
+msgstr ""
+
+msgid "Materia Dark"
+msgstr ""
+
+msgid "Orchis"
+msgstr ""
+
+msgid "Orchis Dark"
+msgstr ""
+
+msgid "Área de trabalho"
+msgstr ""
+
+msgid "Cores"
+msgstr ""
+
+msgid "Efeitos"
+msgstr ""
+
+msgid "Fontes"
+msgstr ""
+
+msgid "Ícones"
+msgstr ""
+
+msgid "Mouse"
+msgstr ""
+
+msgid "Normal"
+msgstr ""
+
+msgid "Otimizado"
+msgstr ""
+
+msgid "Performance"
+msgstr ""
+
+msgid "Configurações de Preload"
+msgstr ""
+
+msgid "Automática"
+msgstr ""
+
+msgid "Ativar"
+msgstr ""
+
+msgid "Desativar"
+msgstr ""
+
+msgid "Configurações do Brave"
+msgstr ""
+
+msgid "Botões da janela no lado esquerdo"
+msgstr ""
+
+msgid "Rolagem do mouse invertida"
+msgstr ""
+
+msgid "Pesquisar arquivos"
+msgstr ""
+
+msgid "Bloquear a área de trabalho"
+msgstr ""
+
+msgid "Remover propagandas:"
+msgstr ""
+
+msgid ""
+"Utilizar o bloqueio de propagandas faz alguns sites não funcionarem "
+"corretamente."
+msgstr ""
+
+msgid ""
+"Deixe o bloqueio desativado para que o navegador seja compatível com mais "
+"sites."
+msgstr ""
+
+msgid "Sim"
+msgstr ""
+
+msgid "Não"
+msgstr ""
+
+msgid ""
+"O navegador Brave tem supore a criptomoedas, esse pode ser um recurso útil."
+msgstr ""
+
+msgid "Desativar o suporte a criptomoedas economiza um pouco de memória RAM."
+msgstr ""
+
+msgid "Suportar criptomoedas:"
+msgstr ""
+
+msgid ""
+"O Preload é iniciado enquanto o sistema está ligando e carrega arquivos dos "
+"programas na memória, para que iniciem rapidamente. Incluir programas que "
+"você não utiliza pode deixar o tempo de boot maior.<br>\n"
+"Programas que não estão instalados podem ter o preload ativado, assim ao ser "
+"instalado automaticamente o preload funcionará:"
+msgstr ""
