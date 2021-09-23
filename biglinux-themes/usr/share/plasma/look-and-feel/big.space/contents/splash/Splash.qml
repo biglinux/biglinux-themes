@@ -4,6 +4,7 @@ import QtQuick 2.1
 Image {
     id: root
     source: "/tmp/bigksplash.jpg"
+    fillMode: Image.PreserveAspectCrop
 
     property int stage
 

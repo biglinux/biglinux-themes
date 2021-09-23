@@ -1,3 +1,0 @@
-#!/bin/bash
-
-echo "optimize" > ~/.config/chromium-optimize

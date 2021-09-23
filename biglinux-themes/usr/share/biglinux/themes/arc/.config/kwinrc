@@ -18,6 +18,9 @@ Id_1=77e3a8d9-802a-45cd-b14a-8a1ea3cb6cb6
 Number=1
 Rows=1
 
+[MouseBindings]
+CommandAllKey=Alt
+
 [Effect-Blur]
 NoiseStrength=0
 
@@ -77,8 +80,8 @@ Placement=Centered
 
 [org.kde.kdecoration2]
 BorderSize=None
-ButtonsOnLeft=MSF
-ButtonsOnRight=HIAX
+ButtonsOnLeft=MF
+ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=false
 library=org.kde.breeze
 

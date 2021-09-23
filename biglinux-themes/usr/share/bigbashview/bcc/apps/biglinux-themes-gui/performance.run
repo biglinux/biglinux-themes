@@ -4,6 +4,7 @@
 export TEXTDOMAINDIR="/usr/share/locale"
 export TEXTDOMAIN=biglinux-themes
 
+windowID="$(xprop -root '\t$0' _NET_ACTIVE_WINDOW | cut -f 2)"
 
 echo "2" > "$HOME/.big_performance"
 
@@ -18,13 +19,15 @@ kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key Backend XRender
 
 
 if [ "$1" != "quiet" ]; then
-
+    # Restart plasmashell
+    # systemctl --user restart plasma-plasmashell
+        
     # Apply
     qdbus org.kde.KWin /KWin org.kde.KWin.reconfigure
-
+    
+    kdialog  --attach="$windowID" --msgbox $"Desempenho em modo performance!" &
+    
     # Restart plasmashell
-    killall plasmashell
-
-    kdialog  --attach="$windowID" --msgbox $"Desempenho em modo performance!"
+    # systemctl --user restart plasma-plasmashell
 fi
 

@@ -23,11 +23,12 @@ kwriteconfig5 --file ~/.config/kwinrc --group Compositing --key Backend OpenGL
 
 
 if [ "$1" != "quiet" ]; then
+        # Restart plasmashell
+        # systemctl --user restart plasma-plasmashell
+
         # Apply
         qdbus org.kde.KWin /KWin org.kde.KWin.reconfigure
 
-        # Restart plasmashell
-        killall plasmashell
-
-        kdialog  --attach="$windowID" --msgbox $"Desempenho em modo otimizado!"
+        kdialog  --attach="$windowID" --msgbox $"Desempenho em modo otimizado!" &
+        
 fi

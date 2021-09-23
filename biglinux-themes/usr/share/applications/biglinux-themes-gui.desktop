@@ -2,8 +2,9 @@
 Categories=Settings;
 Exec=biglinux-themes-gui
 Icon=/usr/share/bigbashview/bcc/apps/biglinux-themes-gui/big-plasma-theme.png
-Name[pt_BR]=Aparência e desempenho
-Name=Appearance and performance
+Name[pt]=Aparência, desempenho e usabilidade
+Name[es]=Apariencia, rendimiento y usabilidad
+Name=Appearance, performance and usability
 StartupNotify=true
 Terminal=false
 Type=Application
