@@ -25,6 +25,7 @@ wobblywindowsEnabled=true
 blurEnabled=false
 kwin4_effect_lightlyshadersEnabled=true
 kwin4_effect_shapecornersEnabled=false
+kwin4_effect_translucencyEnabled=false
 
 [org.kde.kdecoration2]
 BorderSize=None

@@ -25,6 +25,7 @@ kwin4_effect_lightlyshadersEnabled=true
 kwin4_effect_shapecornersEnabled=false
 kwin4_effect_fadingpopupsEnabled=true
 wobblywindowsEnabled=true
+kwin4_effect_translucencyEnabled=false
 
 [TabBox]
 BorderActivate=9
