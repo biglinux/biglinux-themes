@@ -12,11 +12,19 @@ Rows=1
 [MouseBindings]
 CommandAllKey=Alt
 
+[Effect-Wobbly]
+Drag=70
+MoveFactor=25
+Stiffness=2
+WobblynessLevel=2
+
 [Effect-Blur]
 BlurStrength=4
 NoiseStrength=0
 
 [Plugins]
+kwin4_effect_fadingpopupsEnabled=true
+wobblywindowsEnabled=true
 blurEnabled=true
 kwin4_effect_lightlyshadersEnabled=false
 kwin4_effect_shapecornersEnabled=false

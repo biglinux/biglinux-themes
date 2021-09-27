@@ -37,6 +37,12 @@ BorderActivate=9
 BorderActivateAll=9
 BorderActivateClass=9
 
+[Effect-Wobbly]
+Drag=70
+MoveFactor=25
+Stiffness=2
+WobblynessLevel=2
+
 [ElectricBorders]
 Bottom=None
 BottomLeft=None
@@ -49,6 +55,9 @@ TopRight=None
 
 [Plugins]
 contrastEnabled=true
+kwin4_effect_translucencyEnabled=false
+wobblywindowsEnabled=true
+kwin4_effect_fadingpopupsEnabled=true
 
 [TabBox]
 BorderActivate=9
