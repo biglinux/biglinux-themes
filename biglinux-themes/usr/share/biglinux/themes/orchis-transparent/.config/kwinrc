@@ -20,7 +20,7 @@ WobblynessLevel=2
 
 [Plugins]
 blurEnabled=true
-contrastEnabled=false
+contrastEnabled=true
 kwin4_effect_lightlyshadersEnabled=true
 kwin4_effect_shapecornersEnabled=false
 kwin4_effect_fadingpopupsEnabled=true

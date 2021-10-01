@@ -23,7 +23,7 @@ Stiffness=2
 WobblynessLevel=2
 
 [Plugins]
-contrastEnabled=false
+contrastEnabled=true
 kwin4_effect_fadingpopupsEnabled=true
 wobblywindowsEnabled=true
 blurEnabled=true
